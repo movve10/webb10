@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="grid1.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <img id="imglogo" src="img/hotel.svg" alt="hotel logo">
+    <img id="imghotell" src="img/headerhotell.png" alt="hotel header image">
+  </header>
+  <nav class="topnav" id="myTopnav">
+    <a href="index.html">Start</a>
+    <a href="boka.html">Boka</a>
+    <a href="rest.html">Resturang och bar</a>
+    <a href="hitta.html" class="active">Hitta</a>
+    <a href="kontakta.html">Kontakta</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+  <div class="left">
+    <p class="iframep">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.724651731958!2d8.675877415431891!3d50.110160619707116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0ea8e6eb9a09%3A0xdf5f40e1e48592d!2sHotel+Motel+One+Frankfurt-R%C3%B6mer!5e0!3m2!1ssv!2sse!4v1558006774271!5m2!1ssv!2sse" height="600" allowfullscreen></iframe>
+    </p>
+  </div>
+  <footer>
+    <p>Shrek den tredje / shrekgatan 3 / 216 17</p>
+  </footer>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+  "h h"
+  "nav nav"
+  "dleft dleft"
+  "f f";
+  grid-gap: 15px;
+}
+
+header {
+  grid-area: h;
+}
+
+.topnav {
+  grid-area: nav;
+  background-color: #333;
+}
+
+.left {
+  grid-area: dleft;
+  background-color: lightblue;
+}
+
+.right {
+  grid-area: dright;
+  background-color: lightblue;
+}
+
+footer {
+  grid-area: f;
+  background-color: lightblue;
+}
+
+@media screen and (max-width:600px) {
+  body {
+    display: grid;
+    grid-template-areas:
+    "h h"
+    "nav nav"
+    "dleft dleft"
+
+    "f f";
+  }
+}

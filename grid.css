@@ -1,0 +1,48 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+  "h h"
+  "nav nav"
+  "dleft dright"
+  "dleft dright"
+  "f f";
+  grid-gap: 15px;
+}
+
+header {
+  grid-area: h;
+}
+
+.topnav {
+  background-color: lightblue;
+  grid-area: nav;
+}
+
+.left {
+  grid-area: dleft;
+  background-color: lightblue;
+}
+
+.right {
+  grid-area: dright;
+  
+}
+
+footer {
+  grid-area: f;
+  background-color: lightblue;
+}
+
+@media screen and (max-width:600px) {
+  body {
+    display: grid;
+    grid-template-areas:
+    "h h"
+    "nav nav"
+    "dleft dleft"
+    "dright dright"
+    "f f";
+  }
+}
