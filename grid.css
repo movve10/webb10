@@ -16,7 +16,7 @@ header {
 }
 
 .topnav {
-  background-color: lightblue;
+  background-color: #333;
   grid-area: nav;
 }
 
@@ -27,7 +27,7 @@ header {
 
 .right {
   grid-area: dright;
-  
+
 }
 
 footer {

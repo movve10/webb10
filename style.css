@@ -1,6 +1,11 @@
 body {
   margin: 1em;
+  font-family: 'Merriweather', Arial, sans-serif;
   background-image: url(img/repeat.png);
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 nav, div, footer{
@@ -33,7 +38,7 @@ img#imglogo {
   border-radius: 25px;
 }
 
-div p{
+p, h1{
   margin: 10px;
 }
 
